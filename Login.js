@@ -19,10 +19,10 @@ export default class Login extends Component<Props> {
     this.login = this.login.bind(this);
 
     firebase.initializeApp({
-    apiKey: "AIzaSyD8HXtKkIf4R7KwT5L97s9bn6D06_VS4xc",
-    authDomain: "test-51401.firebaseapp.com",
-    databaseURL: "https://test-51401.firebaseio.com",
-    storageBucket: "test-51401.appspot.com"
+    apiKey: "AIzaSyC78siiF8KSVpSVlcqvFzWXROqL9MaAfRY",
+    authDomain: "iot-home-9e814.firebaseapp.com",
+    databaseURL: "https://iot-home-9e814.firebaseio.com",
+    storageBucket: "iot-home-9e814.appspot.com"
 });
   }
 

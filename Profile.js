@@ -20,10 +20,10 @@ export default class Profile extends Component<Props> {
 
     this.state = {
       showText: true,
-      r1: true,
-      r2: true,
-      r3: true,
-      r4: true,
+      r1,
+      r2,
+      r3,
+      r4,
       relayState: "1111",
       userPath: "/WORKING/" + user_name,
     }
@@ -48,22 +48,22 @@ export default class Profile extends Component<Props> {
 
             if(this.state.relayState.charAt(0) == "1")
             {
-              //console.warn("inside true");
+              console.warn("configure R1: true");
               this.setState({r1: true});
             }
             else {
-              //console.warn("inside false");
+              console.warn("configure R1: false");
               this.setState({r1: false});
             }
             //console.warn("r1: " + this.state.r1);
 
             if(this.state.relayState.charAt(1) == "1")
             {
-              //console.warn("inside true");
+              console.warn("configure R2: true");
               this.setState({r2: true});
             }
             else {
-              //console.warn("inside false");
+              console.warn("configure R2: false");
               this.setState({r2: false});
             }
 
@@ -93,10 +93,10 @@ export default class Profile extends Component<Props> {
   }
 
   render() {
-    //const {r1} = this.state;
-    const {r2} = this.state;
-    const {r3} = this.state;
-    const {r4} = this.state;
+    const {r1} = this.state.r1;
+    const {r2} = this.state.r2;
+    const {r3} = this.state.r3;
+    const {r4} = this.state.r4;
     //const r4Val = r4;
 
     return (
